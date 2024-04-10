@@ -1,0 +1,225 @@
+/*input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}*/
+
+body{
+    /* border: 2px solid orange; */
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: 100%;
+    height: 100vh;
+    font-family: Arial, sans-serif;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.billContainer{
+    /*border: 2px solid black;*/
+    padding: 10px 20px;
+}
+
+.billDetails{
+    /* border: 2px solid red; */
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
+
+}
+.billDetails1{
+    /*border: 2px solid blue;*/
+
+    display: flex;
+    flex-direction: column;
+}
+.billDetails1 table {
+    /*border: 2px solid red;*/
+    width: 60%;
+}
+.billHeader-1 table td{
+    font-size: 11px;
+    font-weight: 500;
+}
+.billDetails1 table td input{
+    /*border: 2px solid red;*/
+    width: calc(100% - 20px);
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: none;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    outline: none;
+}
+.billDetails1 table td input:focus {
+    border-radius: 5px;
+    border: 2px solid #007bff; /* Blue color */
+    box-shadow: 0 0 5px #007bff;
+    background: #f5f5f5;
+}
+.billDetails2{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: end;
+}
+
+.billDetails2 input{
+    width: calc(100% - 20px);
+    padding: 5px;
+    border: 2px solid #E4E6C3;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: none;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    outline: none;
+}
+.billDetails2 table td input:focus {
+    border-radius: 5px;
+    border: 2px solid #007bff; /* Blue color */
+    box-shadow: 0 0 5px #007bff;
+    background: #f5f5f5;
+}
+
+.productDetails{
+    /* border: 2px red solid; */
+    position: relative;
+    min-height: 200px;
+    margin-top: 10px;
+    border-radius: 10px ;
+    box-shadow: 0 7px 20px rgba(0, 0, 0, 0.5);
+    padding: 0px 0 10px 0;
+}
+
+#invoice-container {
+    margin-top: 20px;
+}
+
+.productDetails_table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.productDetails_table thead tr{
+    /*border: 2px solid red;*/
+    border-radius: 15px;
+}
+.productDetails_table tr th, .productDetails_table tr td {
+    border: 1px solid #faf5f5;
+    padding: 8px;
+    text-align: left;
+}
+.productDetails .productDetails_table tr td input{
+    /*border: 2px solid red;*/
+    width: 100%;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+    box-shadow: none;
+    -webkit-transition: 0.1s;
+    transition: 0.1s;
+    outline: none;
+}
+.productDetails .productDetails_table tr td input:focus {
+    border-radius: 5px;
+    border: 2px solid #007bff; /* Blue color */
+    box-shadow: 0 0 5px #6699ff;
+    background: #F5F5F5;
+
+}
+.productDetails_table tr th:nth-child(2){
+    width: 40%;
+}
+
+.productDetails_table th {
+    background-color: #f2f2f2;
+}
+
+.billFooter{
+    /* border: 2px solid black; */
+
+    /* position: absolute; */
+    /* width: 100%; */
+    position: relative;
+    bottom: 0;
+    display: flex;
+    justify-content: space-between;
+    margin-top: 69px;
+}
+.billFooter-1{
+    /* border: 2px solid red; */
+    display: flex;
+    flex-direction: column;
+    margin-left: 20px
+}
+.billFooter-1 input{
+    width: 100px;
+    height: 20px;
+    font-size: 15px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+    padding-left: 5px;
+}
+
+
+.billFooter-2{
+    /*border: 2px solid red;*/
+    display: flex;
+    flex-direction: column;
+    align-items: end;
+}
+
+.billFooter-2 p{
+
+    align-items: flex-end;
+    border: none;
+    margin: 0 10px 2px 2px;
+}
+
+
+.billButtons{
+    /*border: 2px solid red;*/
+    min-height: 50px;
+    border-radius: 9px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2px 8px;
+    margin-top: 8px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.4);
+}
+.priviewButton{
+    padding: 7px;
+    border-radius: 9px;
+    border: none;
+    background: #FAE526;
+    color: #ffffff;
+    font-weight: bold;
+}
+.saveButton{
+     padding: 7px;
+    border-radius: 9px;
+    border: none;
+    background: #007bff;
+    color: #ffffff;
+    font-weight: bold;
+}
+.billButtons button{
+    cursor: pointer; 
+    color: #000000;
+
+}
+
+.updateX{
+    color: red;
+    background: none;
+    border: none;
+    size: 20px;
+}

@@ -1,0 +1,190 @@
+/* -------------Corve Design waves----------  */
+        .custom-shape-divider-bottom-1710766683 {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            overflow: hidden;
+            line-height: 0;
+        }
+
+        .custom-shape-divider-bottom-1710766683 svg {
+            position: relative;
+            display: block;
+            width: calc(270% + 1.3px);
+            height: 258px;
+        }
+
+        .custom-shape-divider-bottom-1710766683 .shape-fill {
+            fill: #FFFFFF;
+        }
+
+
+
+body {
+    /* background: black; */
+    margin: 0;
+    font-family: 'Poppins', sans-serif;
+    overflow-x: hidden;
+}
+
+body::-webkit-scrollbar{
+    display: none;
+}
+.help_header {
+    background: linear-gradient(to right,#8428ac, #F8532D);
+    height: 5em;
+    display: flex;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    transition: background-color 0.4s ease-in-out;
+    z-index: 999;
+    border: 0;
+}
+
+.help_header.help_scrolled {
+    background-color: rgba(0, 0, 0, 0.9);
+    background-image: none;
+    opacity: 0.98;
+    color: #ffffff;
+}
+
+.help_header .help_header_nav {
+    padding: 1.5em 0 1.5em 5em;
+}
+
+.help_header .help_header_nav .help_header_a a{
+    text-decoration: none;
+    color: white;
+    font-size: .98em;
+    margin-left: 9px;
+    transition: color 0.4s ease-in-out;
+    width: 600;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.help_heading {
+    min-height: 400px;
+}
+
+.help_header_nav {
+    /* border: 2px solid red; */
+
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.help_header_nav .help_header_login {
+    background: #ffffff;
+    height: 40px;
+    width: 150px;
+    border-radius: 25px;
+    color: #222F94;
+    font-size: 14px;
+    font-weight: bold;
+    margin-right: 20px;
+    cursor: pointer;
+}
+.help_header_nav .help_header_signup {
+    background: transparent;
+    height: 40px;
+    width: 150px;
+    border-radius: 25px;
+    border: 1px #ffffff solid;
+    color: #ffffff;
+    font-size: 14px;
+    font-weight: bold;
+}
+/* Section //  ----------help_section------------  */
+.help_section {
+    /* border: 2px solid blue; */
+    background: linear-gradient(to right,#8428ac, #F8532D);
+    /* color: white; */
+    position: relative;
+    display: flex;
+    justify-content: center;
+    min-height: 750px;
+    /* padding: 100px 20vw; */
+}
+.help_section .help_section_text{
+    /* border: 2px solid blue; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 80px;
+    gap: 90px;
+}
+.help_section .help_section_text .help_section_text1{
+    /* border: 2px solid blue; */
+    display: flex;
+    flex-direction: column;
+    margin-top: 10%;
+}
+.help_section .help_section_text .help_section_text1 h1{
+    /* border: 2px solid black; */
+
+    font-size: 18px;
+    line-height: 23px;
+    font-weight: 600;
+    color: #E0CEE3;
+    margin: 0 0 10px 0;
+}
+.help_section .help_section_text .help_section_text1 p{
+    /* border: 2px solid black; */
+    font-size: 48px;
+     line-height: 60px; 
+    font-weight: 600;
+    color: rgb(255, 255, 255);
+    margin: 0;
+}
+.help_section .help_section_text .help_section_text1 button{
+    margin-top: 20px;
+    width: 50%;
+    height: 40px;
+    border: none;
+    border-radius: 50px;
+    cursor: pointer;
+    color: rgb(34, 41, 133);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 23px;
+}
+
+.help_section .help_section_text .help_section_img img{
+    /* position: absolute; */
+    width: 500px;
+}
+
+/* ------------help_section2-------------- */
+
+.help_section2{
+    /* border: 2px solid black; */
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-bottom: 80px;
+    min-height: 400px;
+}
+.help_section2 .help_section2_txt{
+    /* border: 2px solid red; */
+    padding: 30px;
+}
+.help_section2 .help_section2_txt h3{
+    font-size: 36px;
+    font-weight: 600;
+    line-height: 45px;
+    color: rgb(34, 37, 41);
+    margin: 0;
+}
+.help_section2 .help_section2_txt p{
+    font-size: 18px;
+    line-height: 30px;
+    font-weight: 400;
+    color: rgb(59, 62, 79);
+}
+.help_section2 .help_section2_img img{
+    width: 500px;
+}
+
