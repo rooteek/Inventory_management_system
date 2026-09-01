@@ -1,7 +1,5 @@
 FROM tomcat:9.0-jdk17-temurin
 
-Remove default Tomcat web applications
-
 RUN rm -rf /usr/local/tomcat/webapps/*
 
 Copy the built WAR file as ROOT.war so it serves at the root URL (/)
