@@ -1,7 +1,3 @@
-Dockerfile for Inventory Management System on Render
-
-Uses Tomcat 9 (compatible with javax.servlet API) and Eclipse Temurin JDK 17
-
 FROM tomcat:9.0-jdk17-temurin
 
 Remove default Tomcat web applications
